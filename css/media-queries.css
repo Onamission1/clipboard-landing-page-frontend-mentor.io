@@ -1,0 +1,141 @@
+/* Media Queries For 1200PX */
+@media screen and (max-width: 1200px) {
+  :root {
+    /* Spacing */
+    --section-padding: 80px;
+  }
+
+  /* About Section */
+  .about {
+    padding: 75px var(--section-padding);
+  }
+
+  .about__inner {
+    flex-direction: column;
+  }
+
+  .about__inner .img__box {
+    width: 100%;
+  }
+
+  .about__inner .img__box img {
+    width: 80%;
+    margin: auto;
+    transform: translateX(0);
+  }
+
+  .about__inner .card__group {
+    width: 100%;
+    padding: 70px 0 0;
+    text-align: center;
+  }
+
+  .about__inner .card__group .card p {
+    margin: auto;
+  }
+
+  /* Access Section */
+  .access img {
+    width: 80%;
+  }
+}
+
+/* Media Queries For 992PX */
+@media screen and (max-width: 992px) {
+  /* Footer Section */
+  footer .links {
+    grid-template-columns: repeat(2, minmax(120px, 120px));
+    grid-gap: 20px 40px;
+  }
+}
+
+/* Media Queries For 768PX */
+@media screen and (max-width: 768px) {
+  /* Header Section */
+  .btn__group .btn__primary {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+
+  /* Footer Section */
+  footer {
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-gap: 50px 0;
+  }
+
+  footer .links {
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 30px 40px;
+  }
+
+  .social__links {
+    place-self: center;
+  }
+
+  .social__links a:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+/* Media Queries For 576px */
+@media screen and (max-width: 576px) {
+  :root {
+    /* Typography */
+    --fs-h1: 32px;
+    --fs-h2: 28px;
+    --fs-p-lg: 16px;
+    --fs-p-md: 16px;
+
+    /* Spacing */
+    --section-padding: 35px;
+  }
+
+  /* Header Section */
+  header {
+    background: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 130px 30px 75px;
+  }
+
+  .btn__group .btn {
+    width: 100%;
+  }
+
+  /* About Section */
+  .about__inner .img__box img {
+    width: 100%;
+  }
+
+  .about__inner .card__group .card p {
+    line-height: 1.5;
+  }
+
+  /* Access Section */
+  .access p {
+    margin-bottom: 60px;
+  }
+
+  .access img {
+    width: 100%;
+  }
+
+  /* Features Section */
+  .features .card__group {
+    grid-template-columns: 1fr;
+    grid-gap: 60px 30px;
+  }
+
+  /* Client Section */
+  .clients__section {
+    grid-gap: 60px 100px;
+  }
+
+  /* Footer Section */
+  footer .links {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
